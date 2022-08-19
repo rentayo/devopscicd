@@ -27,7 +27,7 @@ jobs:
       run: docker tag mysql:latest troflez/mysql
       
     - name: Tag PHP
-      run: docker tag devopsexam_php:latest troflez/devopsexam_php
+      run: docker tag devopsexam_php:latest troflez/devopstest_php
       
     - name: Tag PHPmyadmin
       run: docker tag phpmyadmin/phpmyadmin:latest troflez/phpmyadmin
@@ -36,7 +36,7 @@ jobs:
       run: docker push troflez/mysql
       
     - name: Push PHP
-      run: docker push troflez/devopsexam_php
+      run: docker push troflez/devopstest_php
       
     - name: Push PHPmyadmin
       run: docker push troflez/phpmyadmin
