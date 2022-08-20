@@ -19,15 +19,6 @@ jobs:
     - name: Build the Docker image
       run: docker-compose up -d
       
-    - name: Tag MySQL
-      run: docker tag mysql:latest troflez/mysql
-      
-    - name: Tag PHP
-      run: docker tag devopstest_php:latest troflez/devopstest_php
-      
-    - name: Tag PHPmyadmin
-      run: docker tag phpmyadmin/phpmyadmin:latest troflez/phpmyadmin
-      
     - name: Push MySQL
       run: docker push troflez/mysql
       
