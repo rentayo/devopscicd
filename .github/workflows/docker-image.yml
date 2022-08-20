@@ -1,0 +1,38 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]  
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      
+    - name: Login to Dockerhub
+      run: |
+        echo "${{ secrets.DOCKER_PW }}" | docker login -u "troflez" --password-stdin
+        
+    - name: Build the Docker image
+      run: docker-compose up -d
+      
+    - name: Tag MySQL
+      run: docker tag mysql:latest troflez/mysql
+      
+    - name: Tag PHP
+      run: docker tag devopstest_php:latest troflez/devopstest_php
+      
+    - name: Tag PHPmyadmin
+      run: docker tag phpmyadmin/phpmyadmin:latest troflez/phpmyadmin
+      
+    - name: Push MySQL
+      run: docker push troflez/mysql
+      
+    - name: Push PHP
+      run: docker push troflez/devopstest_php
+      
+    - name: Push PHPmyadmin
+      run: docker push troflez/phpmyadmin
