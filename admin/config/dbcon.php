@@ -1,6 +1,6 @@
 <?php 
 
-$host = "mysqlHost";
+$host = "localhost";
 $username = "devops";
 $password = "dbadmin";
 $database = "devopsexam";
