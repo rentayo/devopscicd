@@ -17,7 +17,7 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">My Profile</a></li>
             <li>
-              <form action="methods.php" method="POST">
+              <form action="logout.php" method="POST">
                 <button type="submit" class="dropdown-item" name="logout_btn">Logout</button>
               </form>
             </li>
