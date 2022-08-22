@@ -9,3 +9,5 @@ How to simulate:
 
    Admin: fort@admin.com  |   admin123
    User:  test@user.com   |   test123
+   
+*NOTE: you can dump DB and save in ./db folder before PR to for the DB to persist on image bhild
