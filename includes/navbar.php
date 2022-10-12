@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="#">Devops Exam</a>
+    <a class="navbar-brand" href="index.php">Devops Exam</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -17,7 +17,7 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">My Profile</a></li>
             <li>
-              <form action="methods.php" method="POST">
+              <form action="logout.php" method="POST">
                 <button type="submit" class="dropdown-item" name="logout_btn">Logout</button>
               </form>
             </li>
